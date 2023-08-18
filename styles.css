@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+    list-style: none;
+}
+body{
+    background: #F3F3F3;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header, footer{
+    background-color: #222222;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+header ul{
+    display: flex;
+    color: white;
+    gap: 2em;
+    font-weight: 400;
+}
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.domiPromo{
+    background: url('./assets/domi.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+    color: red;
+    height: 40vh;
+}
+.domiPromo span{
+    color: white;
+}
+.topPizza{
+    background: white;
+    border-radius: 15px;
+    width: 50%;
+    height: 40vh;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.topPizza h2{
+    color: red;
+    text-align: center;
+}
+.topPizza article{
+    display: flex;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+article div h3{
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 900;
+}
+article div li{
+    font-weight: 600;
+}
+article div ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+footer ul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.hamb{
+    display: none;
+}
+li:hover{
+    font-weight: 900;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    main{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+    .topPizza{
+        width: 100%;
+    }
+    .domiPromo{
+        width: 100%;
+    }
+    header ul{
+        display: none;
+    }
+    footer{
+        flex-direction: row-reverse;
+    }
+    .hamb{
+        display: block;
+    }
+}
